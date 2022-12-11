@@ -1,0 +1,33 @@
+---
+---
+
+// Highlighter CSS for Rouge
+// Create using command:
+// rougify style STYLE_NAME_HERE > rouge.css
+// https://rouge-ruby.github.io/docs/Rouge/Themes.html
+// Or download from https://github.com/mzlogin/rouge-themes and rename.
+@import "rouge.css";
+
+// Font import from Google Fonts
+@import "https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap";
+
+// Custom colours
+$background: rgb(1, 3, 7);
+$text: rgb(255, 255, 255);
+$shadow-color: rgba(0, 0, 0, 0);
+$highlight: rgb(45, 50, 60);
+
+// Font settings
+$font-body: "Open Sans";
+$font-monospace: "Fira Code";
+$font-body-size: 12pt;
+$font-monospace-size: 12pt;
+
+// Max width for posts and pages
+$max-width: 800px;
+
+// Avatar for top-left
+$avatar: "https://avatars.githubusercontent.com/bdshrk";
+
+// Main theme import
+@import "grid-portfolio-theme/main";
