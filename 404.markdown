@@ -1,0 +1,8 @@
+---
+permalink: /404.html
+layout: page
+---
+
+# 404
+
+## Page not Found!
