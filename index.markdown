@@ -1,5 +1,10 @@
 ---
-layout: portfolio
-title: "Home"
-navindex: -100
+layout: default 
+nav_exclude: true
 ---
+
+# Welcome!
+
+## Portfolio
+
+{% include_relative portfolio/_portfolio.md %}

@@ -24,11 +24,25 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Build settings
-remote_theme: bdshrk/grid-portfolio-theme
+remote_theme: bdshrk/just-the-docs
 plugins:
   - jekyll-feed
 
 permalink: /:title/
+
+# External navigation links
+nav_external_links:
+  - title: GitHub Profile
+    url: https://github.com/bdshrk
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+  - title: GitHub Repositories
+    url: https://github.com/bdshrk?tab=repositories
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+
+color_scheme: dark
 
 # Exclude from processing.
 # The following items will not be processed, by default.

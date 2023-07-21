@@ -1,8 +1,11 @@
 ---
 permalink: /404.html
-layout: page
+layout: default
+nav_exclude: true
 ---
 
 # 404
 
-## Page not Found!
+Page not found.
+
+<a href="javascript:history.back()">Return to previous page.</a>
