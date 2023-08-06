@@ -19,7 +19,7 @@ nav_order: 93
 - Multiple game speeds.
 - Per country action system.
 - Movement of units using Dijkstra's algorithm.
-  - Units cannot move into areas that they do not have access to (neutral countries)
+  - Units cannot move into areas that they do not have access to (neutral countries.)
   - Units can move via ocean only from ports.
 - Dynamic placement of country name labels.
 - Occupation of enemy countries.
@@ -32,7 +32,7 @@ nav_order: 93
 
 ![](/assets/mgo/europe.png)
 
-*Full map of now.*
+*Full map as of now.*
 
 ![](/assets/mgo/factories.png)
 
@@ -53,7 +53,7 @@ Each time the game is run, it reads the current `world.png` file and associated 
 *The world.png used to generate the game map.*
 
 The game also contains an "editor" mode that allows for easy editing of the `world.json` without having to manually edit the file. The editor mode saves the file as a copy as it is being worked on and the changes can be made permanent by copying and choosing to replace the original `world.json` file.
-My current workflow for adding new states and locales is to edit the map image externally, and then launch the game in the "editor" mode to select, assign and create new states as appropriate.
+The current workflow for adding new states and locales is to edit the map image externally, and then launch the game in the "editor" mode to select, assign and create new states as appropriate.
 
 ### World JSON
 
@@ -84,7 +84,7 @@ If a city/town is a port, then the value `true` can be added to the array to sig
 }
 ```
 
-The second sections is the `states` section, where locales are grouped into states. The state's key is it's internal name, and each state contains a capital locale.
+The second section is the `states` section, where locales are grouped into states. The state's key is it's internal name, and each state contains a capital locale.
 
 ```json
 {
@@ -129,7 +129,7 @@ It is worth noting that the ocean is technically just a country that is handled 
 ## Actions
 
 Each country has actions that provided rewards upon completion.
-Actions form a branching tree where previous actions or other requirements (`prereq`) need to be completed before the action can be started. Actions take time to complete and sometimes require a price to begin. The process of constructing factories is implemented as an action which costs currency and rewards a factory on completion. Actions have progress bars to track the progression in the appropriate UI menu.
+Actions form a branching tree where previous actions or other requirements (`prereq`) need to be completed before the action can be started. Actions take time to complete and sometimes require a price to begin. The process of constructing factories is implemented as an action which costs currency and rewards a factory upon completion. Actions have progress bars to track the progression in the appropriate UI menu.
 
 ```json
 {
@@ -161,4 +161,4 @@ Actions form a branching tree where previous actions or other requirements (`pre
 }
 ```
 
-The keys in `prereq` and `complete` are looked up in a string to function dictionary to check whether the requirement is satisfied or to give rewards upon completion.
+The keys in `prereq` and `complete` are looked up in a string-to-function dictionary to check whether the requirement is satisfied or to give rewards upon completion.
