@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Blender Jigsaw
-splash: /assets/jigsaw/jigsaw3unwrap.png
+splash: /assets/jigsaw/splashblender.png
 parent: Portfolio
 nav_order: 95
 ---
