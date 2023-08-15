@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Grand Strategy Game
-splash: /assets/mgo/map.png
+splash: /assets/mgo/splash.png
 parent: Portfolio
 nav_order: 93
 ---

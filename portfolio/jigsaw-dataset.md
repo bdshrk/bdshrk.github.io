@@ -8,8 +8,6 @@ nav_order: 96
 
 # Jigsaw Dataset Generator using Blender Python API
 
-{:toc}
-
 ## Goals
 
 The goal is to turn the previously completed modelled jigsaw piece into a dataset generator.

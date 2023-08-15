@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 3D Space Shooter
-splash: /assets/space/splash.png
+splash: /assets/space/splash5.png
 parent: Portfolio
 nav_order: 92
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: NeuralDrummer
-splash: /assets/neuraldrummer/gabriel-barletta--lWcaUVJ39Y-unsplash.jpg
+splash: /assets/neuraldrummer/splash.png
 parent: Portfolio
 nav_order: 105
 ---
@@ -221,4 +221,4 @@ Due to the nature of how the intensities are calculated, this system is not able
 
 ## Notes
 
-Photo by [Gabriel Barletta on Unsplash.](https://unsplash.com/photos/-lWcaUVJ39Y)
+Photos by [Gabriel Barletta](https://unsplash.com/photos/-lWcaUVJ39Y) and [Possessed Photography](https://unsplash.com/photos/U3sOwViXhkY) on Unsplash.
