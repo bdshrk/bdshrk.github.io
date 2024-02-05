@@ -33,13 +33,13 @@ Unmute for audio...
 ### Gameplay
 
 <video controls autoplay muted loop style="width: 100%">
-	<source src="/assets/space/videos/gameplay.mkv" type="video/mp4">
+	<source src="/assets/space/videos/gameplay.mp4" type="video/mp4">
 </video>
 
 ### Movement
 
 <video controls autoplay muted loop style="width: 100%">
-	<source src="/assets/space/videos/movement.mkv" type="video/mp4">
+	<source src="/assets/space/videos/movement.mp4" type="video/mp4">
 </video>
 
 ## The World
