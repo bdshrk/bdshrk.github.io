@@ -1744,7 +1744,9 @@ Unready Weapon
 
 ## Credits
 
+Thank you to [Firepal](https://github.com/Firepal){:target="\_blank"}, developer of Polyliner, for helping compress images and ensuring video playback compatibility on multiple browsers.
+
 -   [Inspiration](https://www.youtube.com/watch?v=t_zN-7Xggw4){:target="\_blank"}
 -   [Background/Skybox texture](https://harambert.itch.io/assets-3d-space-shooter-tutorial){:target="\_blank"}
--   [Polyliner](https://godotengine.org/asset-library/asset/1313){:target="\_blank"}
+-   [Polyliner](https://github.com/Firepal/godot-polyliner){:target="\_blank"}
 -   [Offscreen Indicators](https://www.youtube.com/watch?v=gAQpR1GN0Os){:target="\_blank"}
