@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Waveform Audio Player
-splash: /assets/waveform2/version2.png
+splash: /assets/waveform2/splash.png
 parent: Portfolio
 nav_order: 91
 ---
@@ -190,6 +190,8 @@ outindex.close()
 	- Otherwise you must up- or down-scale a "base" image client-side.
 
 ## Version 2
+
+![](/assets/waveform2/version2.png){:loading="lazy"}
 
 ### Fundamental Differences in Version 2
 

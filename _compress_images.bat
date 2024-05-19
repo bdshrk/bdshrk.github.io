@@ -1,0 +1,1 @@
+oxipng.exe -r -o max -s --alpha ./

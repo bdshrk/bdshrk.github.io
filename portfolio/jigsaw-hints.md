@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Jigsaw Hints Group Project
-splash: /assets/jigsawhints/logo_square.jpg
+splash: /assets/jigsawhints/logo_square_2x.jpg
 parent: Portfolio
 nav_order: 99
 ---
