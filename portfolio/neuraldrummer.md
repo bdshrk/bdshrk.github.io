@@ -10,7 +10,7 @@ nav_order: 105
 
 **A neural network for generating drum tracks for songs.**
 
-![](/assets/neuraldrummer/gabriel-barletta--lWcaUVJ39Y-unsplash.jpg)
+![](/assets/neuraldrummer/gabriel-barletta--lWcaUVJ39Y-unsplash.jpg){:loading="lazy"}
 
 *Practical project for the COMP6590: Computational Creativity module.*
 

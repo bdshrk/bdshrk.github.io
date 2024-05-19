@@ -148,7 +148,7 @@ private void UpdatePlayerLocationInChasers(Vector3 playerPos)
 
 ## Notes
 
-![](/assets/tripod/Tripod-Cover.png)
+![](/assets/tripod/Tripod-Cover.png){:loading="lazy"}
 
 [View AI scripts folder on GitHub](https://github.com/daCFniel/Tripod-Attack/tree/main/Assets/Scripts/AI)
 

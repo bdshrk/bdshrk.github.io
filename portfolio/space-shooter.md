@@ -51,9 +51,9 @@ This model is good enough to represent stars, planets, and moons.
 When the model is imported into Godot,
 we can apply a simple, modifiable material and attach a sphere collider.
 
-![](/assets/space/planet.png)
-![](/assets/space/planet-wireframe.png)
-![](/assets/space/planet-ingame.png)
+![](/assets/space/planet.png){:loading="lazy"}
+![](/assets/space/planet-wireframe.png){:loading="lazy"}
+![](/assets/space/planet-ingame.png){:loading="lazy"}
 
 We can use the following script pieces to randomise the planet:
 First, we randomise the movement and appearance of the planet...
@@ -130,14 +130,14 @@ func _process(delta):
 
 Stars use the same model as planets. They are static and do not rotate, nor can they have different colours and have no scripts attached.
 
-![](/assets/space/star.png)
-![](/assets/space/star-nodes.png)
+![](/assets/space/star.png){:loading="lazy"}
+![](/assets/space/star-nodes.png){:loading="lazy"}
 
 ### Drawing Orbit Path
 
 Orbit paths are created using [Polyliner](https://godotengine.org/asset-library/asset/1313){:target="\_blank"} from the Godot Asset Library. This allows 3D lines to be created in Godot.
 
-![](/assets/space/orbit.png)
+![](/assets/space/orbit.png){:loading="lazy"}
 
 To create the orbit, we simply create a circle using a `Curve3D` and make it the Polyliner curve. The size, scale and rotation of the orbit is determined by its parent and the scale of the orbit as defined by the parent planet.
 
@@ -233,7 +233,7 @@ func draw_orbit():
 		moon.draw_orbit()
 ```
 
-![](/assets/space/space.png)
+![](/assets/space/space.png){:loading="lazy"}
 
 ## The UI
 
@@ -243,8 +243,8 @@ func draw_orbit():
 
 The static HUD includes health and shield meters at the bottom of the screen, an overlay for the warp UI, and some information regarding weapons and targeting in the centre of the screen. Also shown is an FPS counter in the top-right corner.
 
-![](/assets/space/ui.png)
-![](/assets/space/ui-nodes.png)
+![](/assets/space/ui.png){:loading="lazy"}
+![](/assets/space/ui-nodes.png){:loading="lazy"}
 
 A crosshair and a hit-marker image are positioned in the centre of the screen. The hit-marker image will flash when the player damages an enemy. A vertical bar can also be seen to the right of the crosshair. This is the targeting meter, and shows the lock-on progress for the currently targeted enemy.
 
@@ -326,8 +326,8 @@ func update_values(player):
 
 I created a multi-purpose alert system for displaying important information to the player. For example, it is used when the player's shields go down.
 
-![](/assets/space/alert.png)
-![](/assets/space/alert-nodes.png)
+![](/assets/space/alert.png){:loading="lazy"}
+![](/assets/space/alert-nodes.png){:loading="lazy"}
 
 Any script can call the `alert(...)` function below to create and display a new alert on the player's screen. The function makes use of the `yield` function to simplify the full fade-in and fade-out animation calls into a single function.
 
@@ -354,8 +354,8 @@ func alert(line1, line2, time_to_display):
 
 The game has in-world UI, where the name, health, shield, and distance to an AI ship is shown to the player. (For debugging purposes, the current AI FSM state of the ship is also shown.) This is presented in the form of a "nameplate" that follows the ship in the in-game world.
 
-![](/assets/space/shipinfo.png)
-![](/assets/space/shipinfo-nodes.png)
+![](/assets/space/shipinfo.png){:loading="lazy"}
+![](/assets/space/shipinfo-nodes.png){:loading="lazy"}
 
 The script attached to each of these nameplates is very simple, it stores a target alpha value and moves its alpha towards to target. The updating of the components of the nameplate is handled by another script we will look at next.
 
@@ -521,7 +521,7 @@ else:
 
 Putting this all together gets us the following:
 
-![](/assets/space/dynamic-ui.png)
+![](/assets/space/dynamic-ui.png){:loading="lazy"}
 
 ## The Spaceship
 
@@ -533,33 +533,33 @@ The model for the spaceship was created in Blender using very simple geometry.
 
 Version 1 was essentially a placeholder ship for testing the game's movement with. Making this placeholder also allowed me to correctly configure model export and import setting within Blender and Godot.
 
-![](/assets/space/ship1.png)
-![](/assets/space/ship2.png)
+![](/assets/space/ship1.png){:loading="lazy"}
+![](/assets/space/ship2.png){:loading="lazy"}
 
 I modelled half the ship and used a mirror modifier to duplicate it to the other side.
 
-![](/assets/space/ship3.png)
+![](/assets/space/ship3.png){:loading="lazy"}
 
 #### Version 2
 
 Version 2 was a much more modifiable spaceship. Each part of the ship can now be hidden.
 
-![](/assets/space/ship4.png)
-![](/assets/space/ship5.png)
-![](/assets/space/ship6.png)
-![](/assets/space/ship7.png)
-![](/assets/space/ship8.png)
+![](/assets/space/ship4.png){:loading="lazy"}
+![](/assets/space/ship5.png){:loading="lazy"}
+![](/assets/space/ship6.png){:loading="lazy"}
+![](/assets/space/ship7.png){:loading="lazy"}
+![](/assets/space/ship8.png){:loading="lazy"}
 
 Each part of the spaceship can be hidden. This is useful as in the game, trading spaceships won't have guns.
 
-![](/assets/space/ship-parts.gif)
+![](/assets/space/ship-parts.gif){:loading="lazy"}
 
 ### In the Engine
 
 All spaceship, whether player or AI controlled, use the same base. The `spaceship_2` node is the imported model from Blender.
 
-![](/assets/space/ship-ingame.png)
-![](/assets/space/ship-nodes.png)
+![](/assets/space/ship-ingame.png){:loading="lazy"}
+![](/assets/space/ship-nodes.png){:loading="lazy"}
 
 The ship scene contains the following:
 
@@ -924,9 +924,9 @@ func adjust_hitbox_pos(new_vector, new_scale):
 
 Please view these screenshots taken with physics areas and collisions visible:
 
-![](/assets/space/hitbox1.png)
-![](/assets/space/hitbox2.png)
-![](/assets/space/hitbox3.png)
+![](/assets/space/hitbox1.png){:loading="lazy"}
+![](/assets/space/hitbox2.png){:loading="lazy"}
+![](/assets/space/hitbox3.png){:loading="lazy"}
 
 ### Shooting
 
@@ -943,8 +943,8 @@ func _physics_process(delta):
 
 The bullet used is a very simple laser-like mesh with an emissive colour. It is made using Godot's built-in capsule mesh type. The scene contains a timer for cleaning up bullets that have existed for a long time without colliding. Is it important to note that the bullet's collision is not used, instead, whether or not the bullet collides with anything is determined separately.
 
-![](/assets/space/bullet.png)
-![](/assets/space/bullet-nodes.png)
+![](/assets/space/bullet.png){:loading="lazy"}
+![](/assets/space/bullet-nodes.png){:loading="lazy"}
 
 To fire the bullet, we must first reference the bullet scene as well as an impact scene (just an explosion particle effect.)
 

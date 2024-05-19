@@ -26,19 +26,19 @@ nav_order: 93
 
 ## Screenshots
 
-![](/assets/mgo/map.png)
+![](/assets/mgo/map.png){:loading="lazy"}
 
 *Zoomed-in map, displaying state and locale subdivisions.*
 
-![](/assets/mgo/europe.png)
+![](/assets/mgo/europe.png){:loading="lazy"}
 
 *Full map as of now.*
 
-![](/assets/mgo/factories.png)
+![](/assets/mgo/factories.png){:loading="lazy"}
 
 *Manufacturing menu where factories can be assigned to production. Note the 6 factories visible in locales on the map. UK units can also be seen positioned along the south coast.*
 
-![](/assets/mgo/equipment.png)
+![](/assets/mgo/equipment.png){:loading="lazy"}
 
 *The equipment menu displaying the current equipment a country has produced. A locale has also been selected on the map, demonstrating the selection effects.*
 
@@ -48,7 +48,7 @@ The game uses a hierarchy system where the minimum land division is a "locale", 
 
 Each time the game is run, it reads the current `world.png` file and associated `world.json` file. The `world.png` contains the map of the game, with each locale a different colour. The game uses multi-threading to turn chunks of colour in the map image into [2D meshes](https://docs.godotengine.org/en/stable/tutorials/2d/2d_meshes.html) and a `Line2D` for the outline of the locale.
 
-![](/assets/mgo/world.png)
+![](/assets/mgo/world.png){:loading="lazy"}
 
 *The world.png used to generate the game map.*
 

@@ -131,27 +131,27 @@ Each note is its own object and must be listed in chronological order.
 
 ## Gallery
 
-![](/assets/rhythm/options.png)
+![](/assets/rhythm/options.png){:loading="lazy"}
 
 *The options menu lets you change between left- or right-handed controls and adjust the volume.*
 
-![](/assets/rhythm/market.png)
+![](/assets/rhythm/market.png){:loading="lazy"}
 
 *The market shows items that can be purchased.*
 
-![](/assets/rhythm/gameplay.png)
+![](/assets/rhythm/gameplay.png){:loading="lazy"}
 
 *Gameplay screenshot showing the multipliers and combos.*
 
-![](/assets/rhythm/original_background.png)
+![](/assets/rhythm/original_background.png){:loading="lazy"}
 
 *The original background for the game using a different colour scheme.*
 
-![](/assets/rhythm/palette.png)
+![](/assets/rhythm/palette.png){:loading="lazy"}
 
 *Colour palette used is ["Sandwich 6 Ramps Palette"](https://lospec.com/palette-list/sandwich-6-ramps) from user Space Sandwich.*
 
-![](/assets/rhythm/player.png)
+![](/assets/rhythm/player.png){:loading="lazy"}
 
 *The sprite sheet for the player includes some unused animations for running, interacting, and interacting whilst moving.*
 
@@ -161,65 +161,65 @@ Below, I have included a selection of sprites using in development of the game t
 
 The game uses a resolution of 160 x 140 pixels, the same as the Nintendo Game Boy, and as such some of the early sprites and backgrounds use the ["Nostalgia"](https://lospec.com/palette-list/nostalgia) colour palette which is designed to emulate the look of the Game Boy.
 
-![](/assets/rhythm/misc_sprites/balloon.png)
+![](/assets/rhythm/misc_sprites/balloon.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/bg.png)
+![](/assets/rhythm/misc_sprites/bg.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/balloon.png)
+![](/assets/rhythm/misc_sprites/balloon.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/bg.png)
+![](/assets/rhythm/misc_sprites/bg.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/bg_back.png)
+![](/assets/rhythm/misc_sprites/bg_back.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/bg_front.png)
+![](/assets/rhythm/misc_sprites/bg_front.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/bg_mid.png)
+![](/assets/rhythm/misc_sprites/bg_mid.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/bird.png)
+![](/assets/rhythm/misc_sprites/bird.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/board.png)
+![](/assets/rhythm/misc_sprites/board.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/bottom.png)
+![](/assets/rhythm/misc_sprites/bottom.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/bottom_color.png)
+![](/assets/rhythm/misc_sprites/bottom_color.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/cursor.png)
+![](/assets/rhythm/misc_sprites/cursor.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/earth_sphere.png)
+![](/assets/rhythm/misc_sprites/earth_sphere.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/earth_sphere_blank.png)
+![](/assets/rhythm/misc_sprites/earth_sphere_blank.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/earth_sphere_color.png)
+![](/assets/rhythm/misc_sprites/earth_sphere_color.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/hills_bottom.png)
+![](/assets/rhythm/misc_sprites/hills_bottom.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/item_multi.png)
+![](/assets/rhythm/misc_sprites/item_multi.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/moon.png)
+![](/assets/rhythm/misc_sprites/moon.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/moon_large.png)
+![](/assets/rhythm/misc_sprites/moon_large.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/notes.png)
+![](/assets/rhythm/misc_sprites/notes.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/notes_color.png)
+![](/assets/rhythm/misc_sprites/notes_color.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/record.png)
+![](/assets/rhythm/misc_sprites/record.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/record_color.png)
+![](/assets/rhythm/misc_sprites/record_color.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/side_stars.png)
+![](/assets/rhythm/misc_sprites/side_stars.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/spark.png)
+![](/assets/rhythm/misc_sprites/spark.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/star.png)
+![](/assets/rhythm/misc_sprites/star.png){:loading="lazy"}
 
-![](/assets/rhythm/misc_sprites/stars_and_moon.png)
+![](/assets/rhythm/misc_sprites/stars_and_moon.png){:loading="lazy"}
 
 ## Font
 
 I created a custom font for the game's UI. I created two font weights to provide variety in the UI elements. The font was created using an online tool called [BitFontMaker2](https://www.pentacom.jp/pentacom/bitfontmaker2/).
 
-![](/assets/rhythm/fonts/fonts.png)
+![](/assets/rhythm/fonts/fonts.png){:loading="lazy"}
 
 [Download Thin](/assets/rhythm/fonts/tretertertertert-thin.ttf)
 

@@ -12,11 +12,11 @@ nav_order: 91
 
 Playback:
 
-![](/assets/waveform2/preview.gif)
+![](/assets/waveform2/preview.gif){:loading="lazy"}
 
 Customisation:
 
-![](/assets/waveform2/settings.gif)
+![](/assets/waveform2/settings.gif){:loading="lazy"}
 
 ## Version 1
 
@@ -24,7 +24,7 @@ Customisation:
 
 #### SoundCloud
 
-![](/assets/waveform/sc.png)
+![](/assets/waveform/sc.png){:loading="lazy"}
 
 - Pre-computed on track upload by SoundCloud and sent to each user.
 - Rendered using HTML5 canvas.
@@ -37,7 +37,7 @@ Customisation:
 
 Available [here](https://wavesurfer-js.org/).
 
-![](/assets/waveform/wavesurfer.png)
+![](/assets/waveform/wavesurfer.png){:loading="lazy"}
 
 - Requires including a JavaScript file.
 - Rendered using HTML5 canvas.
@@ -73,11 +73,11 @@ The components of the `filter_complex` work as follows:
 
 This command produces the following output:
 
-![](/assets/waveform/backinaday.png)
+![](/assets/waveform/backinaday.png){:loading="lazy"}
 
 Notice how when the amplitudes of the two channels overlap when they are the same; and how some spikes appear grey when one channel is louder than the other.
 
-![](/assets/waveform/two_lunches.png)
+![](/assets/waveform/two_lunches.png){:loading="lazy"}
 
 *The horizontal line for silence at the beginning the created by the `drawbox` filter.*
 
@@ -179,7 +179,7 @@ outindex.close()
 
 ### Evaluating Version 1
 
-![](/assets/waveform2/version1.png)
+![](/assets/waveform2/version1.png){:loading="lazy"}
 
 - Not the best compatibility as it uses `mix-blend-mode`.[^blend-mode]
 - Doesn't look the greatest.
@@ -295,7 +295,7 @@ echo OUTPUT
 
 	Plotting this data as a graph confirms it gives an accurate result:
 
-	![](/assets/waveform2/graph3.png)
+![](/assets/waveform2/graph3.png){:loading="lazy"}
 
 We can put the above steps together in a script like so:
 
@@ -356,7 +356,7 @@ function draw(data) {
 
 This creates the following result:
 
-![](/assets/waveform2/1.png)
+![](/assets/waveform2/1.png){:loading="lazy"}
 
 #### Blurry Edges Fix
 
@@ -368,7 +368,7 @@ canvas.width = 400
 canvas.height = 100
 ```
 
-![](/assets/waveform2/2.png)
+![](/assets/waveform2/2.png){:loading="lazy"}
 
 #### Width and Height of the Rectangles
 
@@ -401,11 +401,11 @@ function draw(data) {
 
 Without spacing:
 
-![](/assets/waveform2/3.png)
+![](/assets/waveform2/3.png){:loading="lazy"}
 
 With spacing:
 
-![](/assets/waveform2/4.png)
+![](/assets/waveform2/4.png){:loading="lazy"}
 
 #### Audio Playback and Tracking using Animations
 
@@ -467,7 +467,7 @@ function draw(data) {
 
 We can see that this works if we unhide the standard HTML audio element. The amount of the canvas coloured red is the same as the playback seeking bar on the audio element:
 
-![](/assets/waveform2/5.png)
+![](/assets/waveform2/5.png){:loading="lazy"}
 
 #### Seeking via the Canvas
 
@@ -529,7 +529,7 @@ Taking the max of the calculated height and 1.0 means that silent sections will 
 
 I hooked up some HTML range sliders to the parameters used in drawing on the canvas. These are only to allow me to configure the best values for parameters and are not meant to be used by 'end-users'.
 
-![](/assets/waveform2/7.png)
+![](/assets/waveform2/7.png){:loading="lazy"}
 
 I later added extra colour picker inputs to change the colour of the rectangles.
 
@@ -549,7 +549,7 @@ function togglePlayback() {
 }
 ```
 
-![](/assets/waveform2/8.png)
+![](/assets/waveform2/8.png){:loading="lazy"}
 
 #### Track Selection
 

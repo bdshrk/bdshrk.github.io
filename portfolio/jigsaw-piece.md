@@ -26,13 +26,13 @@ nav_order: 95
 
 ## Creating the Base Piece
 
-![](/assets/jigsaw/jigsaw1basemesh.png)
+![](/assets/jigsaw/jigsaw1basemesh.png){:loading="lazy"}
 
 To start, I created a quarter of a jigsaw piece aligned to
 a grid for simplicity. I used n-gons (faces connected to more than 4 vertices) to simplify the shape. The piece is completely
 flat and has no height (this can be achieved with modifiers later on).
 
-![](/assets/jigsaw/arraymod.gif)
+![](/assets/jigsaw/arraymod.gif){:loading="lazy"}
 
 I used an "Array" modifier to duplicate the base mesh
 around a rotational point. Rotating the point 90
@@ -47,7 +47,7 @@ individually, then combine.)
 
 To turn the base mesh into a full jigsaw piece, I used a number of modifiers:
 
-![](/assets/jigsaw/modifiers.png)
+![](/assets/jigsaw/modifiers.png){:loading="lazy"}
 
 Explanation of modifiers:
 
@@ -63,21 +63,21 @@ Explanation of modifiers:
 
 These modifiers create the following out of the base mesh:
 
-![](/assets/jigsaw/jigsaw1.png)
+![](/assets/jigsaw/jigsaw1.png){:loading="lazy"}
 
 And in wireframe (notice how the vertices are only displayed on the closest quarter in the original mesh shape as all the others are created via modifiers):
 
-![](/assets/jigsaw/jigsaw1wireframe.png)
+![](/assets/jigsaw/jigsaw1wireframe.png){:loading="lazy"}
 
 ## Applying Randomness to the Piece
 
 Randomness is applied to the piece with the use of the warp modifier. This modifier allows vertices to be displaced based on two defined locations; the origin location, and the target location. In the following examples of the warp modifier, the origin and target locations are represented by the "plus" shapes. I am moving the target location, which warps the vertices around the origin location to the target by an amount determined by the vertex's distance to the origin.
 
-![](/assets/jigsaw/warpmod.gif)
+![](/assets/jigsaw/warpmod.gif){:loading="lazy"}
 
 The warp modifier can handle full XYZ movement (although I am only using XY for this project), as well as rotation for a fully randomised piece.
 
-![](/assets/jigsaw/inoutwarp.gif)
+![](/assets/jigsaw/inoutwarp.gif){:loading="lazy"}
 
 Notice how the mesh distorts when it is warped too far from the original location or when it is scaled too high. This is because the base mesh has too few vertices for the modifier to properly distort.
 
@@ -85,21 +85,21 @@ Notice how the mesh distorts when it is warped too far from the original locatio
 
 To fix the mesh distortion, I edited the base mesh to include many more vertices within the large n-gon surface. I also adjusted the order of the modifiers so that subdivision surface is after the solidify, so the mesh has more vertices along its height.
 
-![](/assets/jigsaw/jigsaw2mesh.png)
+![](/assets/jigsaw/jigsaw2mesh.png){:loading="lazy"}
 
 I also modified the position of the connector warp modifier origin as I found that it give it a more realistic shape.
 
-![](/assets/jigsaw/jigsaw2warp.gif)
+![](/assets/jigsaw/jigsaw2warp.gif){:loading="lazy"}
 
 ## Dynamic Connectors
 
 Next, I added dynamic connectors to the base mesh to increase the randomness. I achieved this by adding more vertices and edges inside the mesh to cut out the inner connector:
 
-![](/assets/jigsaw/jigsaw4basemesh.png)
+![](/assets/jigsaw/jigsaw4basemesh.png){:loading="lazy"}
 
 I then used vertex groups to define the vertices that should be shown for each of the three edge types. Each side can be either an "in" connector, an "out" connector, or an "edge" side. This allows corners to be created via two edge sides that are next to each other. Vertex groups can be shown and hidden via the "Mask" modifier as seen below:
 
-![](/assets/jigsaw/jigsaw4maskmod.gif)
+![](/assets/jigsaw/jigsaw4maskmod.gif){:loading="lazy"}
 
 This approach could technically allow invalid jigsaw pieces to be created, e.g. pieces with all "edge" sides. However, they will be the minority and should not have a noticeable impact on the quality of the dataset.
 
@@ -109,14 +109,14 @@ This approach could technically allow invalid jigsaw pieces to be created, e.g. 
 
 I used Blender's default UV unwrapping and applied a material with an image. Because I am still working with the base mesh rather than the full piece, it can only unwrap a quarter of the mesh. The issue with this is that when the array modifier duplicates the mesh, the UVs of all the pieces are the same as the base, leading to pieces with the same texture rotated around the centre.
 
-![](/assets/jigsaw/jigsaw3unwrap.png)
+![](/assets/jigsaw/jigsaw3unwrap.png){:loading="lazy"}
 
 ### Fixed with Nodes
 
 This UV issue can be fixed by setting up the material nodes of the base mesh to use object texture coordinates rather than UV. This means that the each vertex's texture coordinate is based on its position relative to the origin of the object. Importantly, this is applied *after* modifiers, so there is no longer an issue with the duplicated meshes.
 
-![](/assets/jigsaw/jigsaw3nodes.png)
+![](/assets/jigsaw/jigsaw3nodes.png){:loading="lazy"}
 
 I used a "mapping" node to control the scale and position of the texture on the piece. This means that I can generate different sized jigsaw pieces without actually changing the size of the piece and changing the size of the texture instead.
 
-![](/assets/jigsaw/jigsaw3uv.gif)
+![](/assets/jigsaw/jigsaw3uv.gif){:loading="lazy"}

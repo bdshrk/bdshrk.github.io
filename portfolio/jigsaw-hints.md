@@ -10,7 +10,7 @@ nav_order: 99
 
 **Deep learning image analysis to provide a hint of where jigsaw pieces go in the overall picture of the puzzle.**
 
-![](/assets/jigsawhints/logo.jpg)
+![](/assets/jigsawhints/logo.jpg){:loading="lazy"}
 
 The Jigsaw Hints mobile application is
 built using an image recognition and machine learning technologies. The purpose of the mobile
@@ -27,7 +27,7 @@ My contributions to the project included:
 
 ## App Walkthrough
 
-![](/assets/jigsawhints/phone_process.png)
+![](/assets/jigsawhints/phone_process.png){:loading="lazy"}
 
 *Finding a piece's location using the Android app based on the Flutter framework.*
 
@@ -90,7 +90,7 @@ match is found, the matrix transformation is calculated and applied to the bound
 the puzzle piece to transform piece coordinates into the base coordinates. These points are
 then used to draw the outline designating the matched area.
 
-![](/assets/jigsawhints/figure_sift_match_process.png)
+![](/assets/jigsawhints/figure_sift_match_process.png){:loading="lazy"}
 
 *Example of SIFT using the image processing script to locate the individual piece on the jigsaw base identified via a red box.*
 
@@ -121,7 +121,7 @@ contains all the information and data needed to match the contained piece onto t
 This means that each request can be processed independently from each other (i.e., not
 having to wait for the base image to be processed client-side before sending the piece data.)
 
-![](/assets/jigsawhints/data.png)
+![](/assets/jigsawhints/data.png){:loading="lazy"}
 
 *Sample data sent to the Flask server from the app.*
 
@@ -152,7 +152,7 @@ it would be impractical to take hundreds of real photograph of jigsaws and jigsa
 (and no existing sources were available online). To solve this, we decided to use 
 Blender to generate synthetic jigsaw pieces.
 
-![](/assets/jigsawhints/testing_pieces.png)
+![](/assets/jigsawhints/testing_pieces.png){:loading="lazy"}
 
 *Example of jigsaw pieces generated using Blender with different shapes, sizes and background images.*
 

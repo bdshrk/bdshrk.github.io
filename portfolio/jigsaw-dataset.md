@@ -192,8 +192,8 @@ For iteration 2, the goal is to improve iteration 1 by adding environment random
 
 In the Blender file used by the script, I added a floor mesh slightly below the jigsaw piece. I also added a environment light to emulate the sun and a camera pointing down to render the scene. I did not adjust any of the setting within the scene as the goal is to adjust and randomise them via the script.
 
-![](/assets/jigsaw/environment.png)
-![](/assets/jigsaw/collection2.png)
+![](/assets/jigsaw/environment.png){:loading="lazy"}
+![](/assets/jigsaw/collection2.png){:loading="lazy"}
 
 #### Randomising the Environment
 
@@ -238,11 +238,11 @@ PBR materials require multiple texture maps:
 
 All of the PBR texture maps are stored in a "floor materials" directory, with sub-folders for each texture. E.g. `/Materials/Floor/1/color.jpg`
 
-![](/assets/jigsaw/pbr.png)
+![](/assets/jigsaw/pbr.png){:loading="lazy"}
 
 We also define generic "fallback" texture maps in case the texture to be used does not have a texture for that particular map:
 
-![](/assets/jigsaw/fallback.png)
+![](/assets/jigsaw/fallback.png){:loading="lazy"}
 
 To load these textures into Blender, we stored each image path as a key/value pair in a dictionary, which itself in stored within an array.
 
@@ -341,7 +341,7 @@ For this data to be useful in a dataset, we must also output where within the ba
 
 The vertex is the single orange one on the far left:
 
-![](/assets/jigsaw/corners.png)
+![](/assets/jigsaw/corners.png){:loading="lazy"}
 
 We can get all the vertex coordinates of the corners after all modifiers have been processed (moved by warp modifiers) using the following:
 
@@ -475,7 +475,7 @@ file.close()
 
 As a final touch, I used Blender compositing to give the image a small amount of noise to emulate a phone camera. I also increased the level of noise in low light level areas much in the same way that phone cameras do.
 
-![](/assets/jigsaw/compositing.png)
+![](/assets/jigsaw/compositing.png){:loading="lazy"}
 
 #### Additional Randomisation
 
@@ -581,7 +581,7 @@ for base_index in range(0, len(input_base_images)):
 
 The output of the script is separated by base image:
 
-![](/assets/jigsaw/output.gif)
+![](/assets/jigsaw/output.gif){:loading="lazy"}
 
 "0.csv":
 
@@ -595,17 +595,17 @@ corner,corner_x,corner_y
 
 "0.png":
 
-![](/assets/jigsaw/out/0.png)
+![](/assets/jigsaw/out/0.png){:loading="lazy"}
 
 Here is a selection of output jigsaw pieces:
 
-![](/assets/jigsaw/out/1.png)
-![](/assets/jigsaw/out/2.png)
-![](/assets/jigsaw/out/3.png)
-![](/assets/jigsaw/out/4.png)
-![](/assets/jigsaw/out/5.png)
-![](/assets/jigsaw/out/6.png)
-![](/assets/jigsaw/out/7.png)
+![](/assets/jigsaw/out/1.png){:loading="lazy"}
+![](/assets/jigsaw/out/2.png){:loading="lazy"}
+![](/assets/jigsaw/out/3.png){:loading="lazy"}
+![](/assets/jigsaw/out/4.png){:loading="lazy"}
+![](/assets/jigsaw/out/5.png){:loading="lazy"}
+![](/assets/jigsaw/out/6.png){:loading="lazy"}
+![](/assets/jigsaw/out/7.png){:loading="lazy"}
 
 ## GitHub
 
